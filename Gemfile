@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+group :production do
+
+  #gem for heroku to handle assets
+  gem 'rails_12factor', '0.0.2'
+
+end
+
 #Add factory girl
 gem 'factory_girl_rails'
 
