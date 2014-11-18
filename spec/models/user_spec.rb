@@ -29,4 +29,8 @@ require 'shoulda/matchers'
   it {should ensure_length_of(:password).is_at_most(20)}
   it {should ensure_length_of(:email).is_at_most(255)}
 # it { should validate_presence_of(:password)}
+
+# ADD TEST FOR HAVE_MANY ASSOCIATION
+  it {should have_many(:lists)}
+
 end

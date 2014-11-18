@@ -7,4 +7,7 @@ describe Item do
 
   # Format validations
   it {should ensure_length_of(:name).is_at_most(255)}
+
+  # BELONG TO VALIDATION
+  it {should belong_to(:list)}
 end
